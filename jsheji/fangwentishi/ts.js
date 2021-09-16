@@ -63,7 +63,7 @@
 								timeout: 5000,
 								logError: true
 							};
-							$('#fps').html('<span style="float:left;">' + fps + 'FPS</span><br/><span style="float:left">' + window.info.data.os + '</span><br/><span style="float:left;margin-top:1px;">' + window.info.data.browser + '</span><br/><span style="float:left;margin-top:1px;">' + window.info.data.location + '</span><br/><span style="float:left;margin-top:1px;"></span>');
+							//$('#fps').html('<span style="float:left;">' + fps + 'FPS</span><br/><span style="float:left">' + window.info.data.os + '</span><br/><span style="float:left;margin-top:1px;">' + window.info.data.browser + '</span><br/><span style="float:left;margin-top:1px;">' + window.info.data.location + '</span><br/><span style="float:left;margin-top:1px;"></span>');
 						};
 						step();
 					})();
