@@ -1,0 +1,26 @@
+<!--复制提示开始-->
+<script src="/ts.js"></script>
+<link rel="stylesheet" href="/ts.css" />
+
+<script type="text/javascript">
+function copy_remind(){
+  toastr.success("撰文不易，请保留出处，谢谢！", "复制成功！");
+  clear_toastr(1600); 
+   // 动态设置消息提示时间
+  function clear_toastr(time){
+       setTimeout(
+           function(){ 
+               toastr.clear();
+       }, time);
+  }
+}
+document.addEventListener("copy",function(e){
+  if(window.getSelection(0).toString()){
+      copy_remind();  //若所选文本不为空则显示
+  }  
+  else{
+    toastr.info("啊噢...你没还没选择文字呢！", "复制提示");  
+  }
+});  
+</script>
+<!--复制提示结束结束-->
